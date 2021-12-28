@@ -19,8 +19,8 @@ export default function Home() {
                     <p className="text-lg text-gray-500 dark:text-gray-200 text-justify">
                         Student and developer with the goal of learning and
                         contributing wherever I go. I am capable of designing
-                        maintainable and scalable web applications, and I am
-                        always looking for new challenges.
+                        modern and accessible web applications, and I am always
+                        looking for new challenges.
                     </p>
                 </div>
                 <img
@@ -28,6 +28,7 @@ export default function Home() {
                     className="w-24 h-24 md:w-48 md:h-48 rounded-full aspect-square object-cover"
                 />
             </div>
+            <div className=""></div>
         </>
     )
 }
