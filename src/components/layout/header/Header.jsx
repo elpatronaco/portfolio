@@ -1,10 +1,11 @@
 import { useRouter } from 'next/router'
 import propTypes from 'prop-types'
 import Link from 'next/link'
-import { FaSun } from 'react-icons/fa'
-import Button from '../../atoms/button/Button'
+import { FaMoon, FaSun } from 'react-icons/fa'
+import Button from '../../button/Button'
 import { classNames } from '../../../helpers/classnames'
 import { useDarkMode } from '../../../hooks/useDarkMode'
+import { createElement } from 'react'
 
 export default function Header({ links }) {
     const { pathname } = useRouter()
@@ -33,7 +34,9 @@ export default function Header({ links }) {
                 </nav>
             )}
             <Button icon onClick={darkMode.toggleDarkMode}>
-                <FaSun className="text-2xl text-white dark:text-black" />
+                {createElement(darkMode.isDarkMode ? FaSun : FaMoon, {
+                    className: 'text-xl text-white dark:text-black',
+                })}
             </Button>
         </header>
     )

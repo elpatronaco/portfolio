@@ -1,4 +1,5 @@
 module.exports = {
+    mode: 'jit',
     darkMode: 'class',
     content: ['./src/pages/**/*.{js,jsx}', './src/components/**/*.{js,jsx}'],
     theme: {
@@ -13,6 +14,9 @@ module.exports = {
             colors: {
                 'bg-light': '#fafafa',
                 'bg-dark': '#222222e0',
+            },
+            gridTemplateColumns: {
+                'auto-fit': 'repeat(auto-fit, minmax(9rem, 11rem))',
             },
         },
     },

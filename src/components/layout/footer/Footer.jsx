@@ -2,7 +2,7 @@ import propTypes from 'prop-types'
 import { FaChevronUp } from 'react-icons/fa'
 import { classNames } from '../../../helpers/classnames'
 import { useDarkMode } from '../../../hooks/useDarkMode'
-import Button from '../../atoms/button/Button'
+import Button from '../../button/Button'
 
 export default function Footer({ links }) {
     const darkMode = useDarkMode()
@@ -24,6 +24,7 @@ export default function Footer({ links }) {
                 >
                     {links.map(({ label, href }) => (
                         <a
+                            key={`footer-link-${label}-${href}`}
                             className="w-fit text-lg font-medium text-black dark:text-white hover:cursor-pointer hover:underline hover:underline-offset-4 hover:decoration-2"
                             href={href}
                             target="_blank"

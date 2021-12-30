@@ -1,4 +1,7 @@
 export function classNames(initialClasses, conditionals) {
+    if (!conditionals || !Object.keys(conditionals).length)
+        return initialClasses
+
     const classes = initialClasses.length
         ? initialClasses.trim().split(/\s+/g)
         : []

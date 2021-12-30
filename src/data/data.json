@@ -1,0 +1,47 @@
+{
+    "profile": {
+        "name": "Pau Colomé",
+        "location": "Barcelona, Spain",
+        "job": "Frontend Developer",
+        "description": "Student and developer with the goal of learning and contributing wherever I go. I am capable of designing modern and accessible web applications and I am always looking for new challenges."
+    },
+    "experience": [
+        {
+            "position": "Frontend Developer",
+            "company": "NEORIS",
+            "description": "Currently working with client Vodafone Spain.",
+            "date": "2021 - Present"
+        },
+        {
+            "position": "Frontend Developer",
+            "company": "Between Technology",
+            "description": "Development and maintenance of two React-based tools. I gave ideas and helped on the design of the apps previously. I also applied the latest standards and technologies for the modern web.",
+            "date": "2020 - 2021"
+        }
+    ],
+    "projects": [
+        {
+            "title": "Whatsapp 2",
+            "description": "Rebump of Whatsapp on Angular/Flutter and .NET Core.",
+            "href": "https://whatsapp2-zeta.vercel.app/",
+            "bgColor": "lime",
+            "bgImage": "w2.svg"
+        }
+    ],
+    "headerLinks": [
+        { "label": "Home", "href": "/" },
+        { "label": "Experience", "href": "/#experience" },
+        { "label": "Projects", "href": "/#projects" }
+    ],
+    "footerLinks": [
+        {
+            "label": "Linkedin",
+            "href": "https://www.linkedin.com/in/paucolome/"
+        },
+        { "label": "Github", "href": "https://github.com/elpatronaco" },
+        {
+            "label": "This portfolio",
+            "href": "https://github.com/elpatronaco/portfolio"
+        }
+    ]
+}
