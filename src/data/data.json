@@ -3,7 +3,7 @@
         "name": "Pau Colomé",
         "location": "Barcelona, Spain",
         "job": "Frontend Developer",
-        "description": "Student and developer with the goal of learning and contributing wherever I go. I am capable of designing modern and accessible web applications and I am always looking for new challenges."
+        "description": "Student and developer with the goal of learning and contributing wherever I go. I am capable of designing modern and accessible web applications. I am always looking for new challenges."
     },
     "experience": [
         {
@@ -24,7 +24,8 @@
             "title": "Whatsapp 2",
             "description": "Rebump of Whatsapp on Angular/Flutter and .NET Core.",
             "href": "https://whatsapp2-zeta.vercel.app/",
-            "bgColor": "lime",
+            "bgColor": "bg-lime-500",
+            "bgHoverColor": "bg-lime-600",
             "bgImage": "w2.svg"
         }
     ],
