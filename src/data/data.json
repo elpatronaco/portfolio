@@ -7,10 +7,16 @@
     },
     "experience": [
         {
+            "position": "Specialist Developer",
+            "company": "Vodafone",
+            "description": "Web Platform squad. Specialist in migrations, upgrades, improvements of Vodafone's web apps.",
+            "date": "2022 - Present"
+        },
+        {
             "position": "Frontend Developer",
             "company": "NEORIS",
             "description": "Currently working with client Vodafone Spain.",
-            "date": "2021 - Present"
+            "date": "2021 - 2022"
         },
         {
             "position": "Frontend Developer",
