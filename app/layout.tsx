@@ -8,7 +8,7 @@ import type { PropsWithChildren, ReactElement } from "react"
 
 type LayoutProps = PropsWithChildren
 
-export default function Layout({ children }: LayoutProps): ReactElement {
+export default function RootLayout({ children }: LayoutProps): ReactElement {
   return (
     <html lang="en">
       <Head>
