@@ -1,14 +1,18 @@
-import { useRouter } from "next/router"
-import propTypes from "prop-types"
+"use client"
+
+import { createElement } from "react"
+import { usePathname, useSelectedLayoutSegment } from "next/navigation"
 import Link from "next/link"
 import { FaMoon, FaSun } from "react-icons/fa"
+
 import Button from "../../button/Button"
 import { classNames } from "../../../helpers/classnames"
 import { useDarkMode } from "../../../hooks/useDarkMode"
-import { createElement } from "react"
 
-export default function Header({ links }) {
-  const { pathname } = useRouter()
+import type { HeaderProps } from "./Header.types"
+
+export default function Header({ links }: HeaderProps) {
+  const pathname = usePathname()
   const darkMode = useDarkMode()
 
   return (
@@ -33,22 +37,17 @@ export default function Header({ links }) {
           </ul>
         </nav>
       )}
-      <Button icon onClick={darkMode.toggleDarkMode}>
+      <Button
+        icon
+        onClick={darkMode.toggleDarkMode}
+        title={
+          darkMode.isDarkMode ? "Toggle to light mode" : "Toggle to dark mode"
+        }
+      >
         {createElement(darkMode.isDarkMode ? FaSun : FaMoon, {
           className: "text-xl text-white dark:text-black",
         })}
       </Button>
     </header>
   )
-}
-
-Header.displayName = "Header"
-Header.propTypes = {
-  links: propTypes.arrayOf(
-    propTypes.shape({
-      label: propTypes.string.isRequired,
-      href: propTypes.string.isRequired,
-    }),
-  ),
-  toggleDarkMode: propTypes.func,
 }

@@ -10,19 +10,28 @@
       "position": "Specialist Developer",
       "company": "Vodafone",
       "description": "Web Platform squad. Specialist in migrations, upgrades, improvements of Vodafone's web apps.",
-      "date": "2022 - Present"
+      "date": {
+        "from": "2022",
+        "to": "Current"
+      }
     },
     {
       "position": "Frontend Developer",
       "company": "NEORIS",
       "description": "Currently working with client Vodafone Spain.",
-      "date": "2021 - 2022"
+      "date": {
+        "from": "2021",
+        "to": "2022"
+      }
     },
     {
       "position": "Frontend Developer",
       "company": "Between Technology",
       "description": "Development and maintenance of two React-based tools. I gave ideas and helped on the design of the apps previously. I also applied the latest standards and technologies for the modern web.",
-      "date": "2020 - 2021"
+      "date": {
+        "from": "2020",
+        "to": "2021"
+      }
     }
   ],
   "projects": [
@@ -36,16 +45,28 @@
     }
   ],
   "headerLinks": [
-    { "label": "Home", "href": "/" },
-    { "label": "Experience", "href": "/#experience" },
-    { "label": "Projects", "href": "/#projects" }
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Experience",
+      "href": "/#experience"
+    },
+    {
+      "label": "Projects",
+      "href": "/#projects"
+    }
   ],
   "footerLinks": [
     {
       "label": "Linkedin",
       "href": "https://www.linkedin.com/in/paucolome/"
     },
-    { "label": "Github", "href": "https://github.com/elpatronaco" },
+    {
+      "label": "Github",
+      "href": "https://github.com/elpatronaco"
+    },
     {
       "label": "This portfolio",
       "href": "https://github.com/elpatronaco/portfolio"

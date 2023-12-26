@@ -1,4 +1,3 @@
-import propTypes from "prop-types"
 import { FaChevronUp } from "react-icons/fa"
 import { classNames } from "../../../helpers/classnames"
 import { Button } from "../../button"
@@ -40,14 +39,4 @@ export default function Footer({ links }: FooterProps) {
       </div>
     </footer>
   )
-}
-
-Footer.displayName = "Header"
-Footer.propTypes = {
-  links: propTypes.arrayOf(
-    propTypes.shape({
-      label: propTypes.string.isRequired,
-      href: propTypes.string.isRequired,
-    }),
-  ),
 }

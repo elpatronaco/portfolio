@@ -1,13 +1,16 @@
 import propTypes from "prop-types"
 import { classNames } from "../../helpers/classnames"
 
+import type { ButtonProps } from "./Button.types"
+
 export default function Button({
   children,
   onClick,
   className,
   icon,
   shadowed,
-}) {
+  title,
+}: ButtonProps) {
   return (
     <button
       className={classNames(
@@ -20,17 +23,10 @@ export default function Button({
         },
       )}
       onClick={onClick}
+      title={title}
+      aria-label={title}
     >
       {children}
     </button>
   )
-}
-
-Button.displayName = "Button"
-Button.propTypes = {
-  children: propTypes.node,
-  onClick: propTypes.func,
-  className: propTypes.string,
-  icon: propTypes.bool,
-  shadowed: propTypes.bool,
 }
