@@ -6,8 +6,8 @@ import Link from "next/link"
 import { FaMoon, FaSun } from "react-icons/fa"
 
 import Button from "../../button/Button"
-import { classNames } from "../../../helpers/classnames"
-import { useDarkMode } from "../../../hooks/useDarkMode"
+import { classNames } from "@/helpers"
+import { useDarkMode } from "@/hooks"
 
 import type { HeaderProps } from "./Header.types"
 

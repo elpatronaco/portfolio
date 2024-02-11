@@ -1,6 +1,6 @@
 "use client"
 
-import { classNames } from "../../helpers/classnames"
+import { classNames } from "@/helpers/classnames"
 
 import type { ButtonProps } from "./Button.types"
 

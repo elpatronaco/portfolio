@@ -1,8 +1,7 @@
 "use client"
 
 import { FaChevronUp } from "react-icons/fa"
-import { classNames } from "../../../helpers/classnames"
-import { Button } from "../../button"
+import { Button } from "@/components"
 
 import type { FooterProps } from "./Footer.types"
 
@@ -17,11 +16,7 @@ export default function Footer({ links }: FooterProps) {
   return (
     <footer className="w-full border-solid border-t-2 py-12 px-5 md:px-0">
       {links && (
-        <div
-          className={classNames(
-            "grid content-evenly sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-2",
-          )}
-        >
+        <div className="grid content-evenly sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-2">
           {links.map(({ label, href }) => (
             <a
               key={`footer-link-${label}-${href}`}

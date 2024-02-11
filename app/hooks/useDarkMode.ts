@@ -1,6 +1,11 @@
 import { useEffect, useState } from "react"
 
-export function useDarkMode() {
+export type UseDarkMode = {
+  isDarkMode: boolean
+  toggleDarkMode: () => void
+}
+
+export function useDarkMode(): UseDarkMode {
   const [isDarkMode, setIsDarkMode] = useState(false)
 
   useEffect(() => {
