@@ -4,7 +4,7 @@ import { Metadata } from "next"
 
 async function getData(): Promise<HomeProps> {
   // data is not shipped to client
-  const module = await import("./data/data.json", { assert: { type: "json" } })
+  const module = await import("../data/data.json", { assert: { type: "json" } })
 
   const data = module.default
 
