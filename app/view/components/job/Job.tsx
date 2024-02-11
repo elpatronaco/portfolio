@@ -1,6 +1,12 @@
-import { classNames } from "../../helpers/classnames"
+import { classNames } from "@/helpers/classnames"
+import { Experience } from "@/page.types"
 
-export default function Job({ job, reversed }) {
+export type JobProps = {
+  experience: Experience
+  reversed: boolean
+}
+
+export function Job({ experience, reversed }: JobProps) {
   return (
     <div
       className={classNames("flex flex-row gap-12", {
@@ -13,15 +19,15 @@ export default function Job({ job, reversed }) {
         })}
       >
         <h3 className="font-semibold text-xl dark:text-white w-fit">
-          {job.company}
+          {experience.company}
         </h3>
-        <h4 className="text-lg dark:text-white w-fit">{job.position}</h4>
+        <h4 className="text-lg dark:text-white w-fit">{experience.position}</h4>
         <p className="text-sm text-gray-500 dark:text-white w-fit">
-          {job.date}
+          {experience.date.from} - {experience.date.to}
         </p>
       </div>
       <p className="text-lg text-justify text-gray-500 dark:text-white w-2/3">
-        {job.description}
+        {experience.description}
       </p>
     </div>
   )

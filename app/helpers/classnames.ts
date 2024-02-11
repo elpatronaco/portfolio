@@ -1,4 +1,7 @@
-export function classNames(initialClasses, conditionals) {
+export function classNames(
+  initialClasses: string,
+  conditionals: Record<string, boolean>,
+): string {
   if (!conditionals || !Object.keys(conditionals).length) return initialClasses
 
   const classes = initialClasses.length

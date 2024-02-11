@@ -7,6 +7,7 @@
   },
   "experience": [
     {
+      "id": "vodafone",
       "position": "Specialist Developer",
       "company": "Vodafone",
       "description": "Web Platform squad. Specialist in migrations, upgrades, improvements of Vodafone's web apps.",
@@ -16,6 +17,7 @@
       }
     },
     {
+      "id": "neoris",
       "position": "Frontend Developer",
       "company": "NEORIS",
       "description": "Currently working with client Vodafone Spain.",
@@ -25,6 +27,7 @@
       }
     },
     {
+      "id": "between",
       "position": "Frontend Developer",
       "company": "Between Technology",
       "description": "Development and maintenance of two React-based tools. I gave ideas and helped on the design of the apps previously. I also applied the latest standards and technologies for the modern web.",
@@ -36,6 +39,7 @@
   ],
   "projects": [
     {
+      "id": "whatsapp",
       "title": "Whatsapp 2",
       "description": "Rebump of Whatsapp on Angular/Flutter and .NET Core.",
       "href": "https://whatsapp2-zeta.vercel.app/",

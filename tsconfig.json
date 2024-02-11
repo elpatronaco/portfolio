@@ -5,11 +5,7 @@
     "esModuleInterop": true,
     "jsx": "preserve",
     "module": "ESNext",
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "baseUrl": ".",
     "target": "ESNext",
     "noImplicitAny": true,
@@ -24,15 +20,14 @@
       {
         "name": "next"
       }
-    ]
+    ],
+    "paths": {
+      "@/*": ["app/*"],
+      "@view/*": ["app/view/*"],
+      "@/components": ["app/components/index.ts"],
+      "@/helpers/*": ["app/helpers/*"]
+    }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "dist/types/**/*.ts"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "dist/types/**/*.ts"]
 }

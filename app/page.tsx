@@ -1,29 +1,24 @@
-import data from "./data/data.json"
-import { Container, Job, Project } from "./components"
+import { Container, Job, Project } from "@/components"
 import { HomeProps } from "./page.types"
-import { GetServerSideProps } from "next"
 
-export const getServerSideProps: GetServerSideProps<HomeProps> = ctx => {
-  return new Promise(resolve =>
-    resolve({
-      props: {
-        title: data.profile.name,
-        position: data.profile.job,
-        description: data.profile.description,
-        experiences: data.experience,
-        projects: data.projects,
-      },
-    }),
-  )
+async function getData(): Promise<HomeProps> {
+  const module = await import("./data/data.json", { assert: { type: "json" } })
+
+  const data = module.default
+
+  return {
+    title: data.profile.name,
+    position: data.profile.job,
+    description: data.profile.description,
+    experiences: data.experience,
+    projects: data.projects,
+  }
 }
 
-export default function Home({
-  title,
-  position,
-  description,
-  experiences,
-  projects,
-}: HomeProps) {
+export default async function Home() {
+  const { title, position, description, experiences, projects } =
+    await getData()
+
   return (
     <>
       <div className="flex flex-col gap-16">
@@ -44,10 +39,10 @@ export default function Home({
           />
         </div>
         <Container title="Experience" separator>
-          {experiences.map((job, index) => (
+          {experiences.map((experience, index) => (
             <Job
-              key={`job-${job.company}-${index}`}
-              job={job}
+              key={experience.id}
+              experience={experience}
               reversed={index % 2 !== 0}
             />
           ))}

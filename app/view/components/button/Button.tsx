@@ -1,4 +1,5 @@
-import propTypes from "prop-types"
+"use client"
+
 import { classNames } from "../../helpers/classnames"
 
 import type { ButtonProps } from "./Button.types"

@@ -1,4 +1,5 @@
 export type Experience = {
+  id: string
   company: string
   position: string
   description: string
@@ -23,4 +24,8 @@ export type HomeProps = {
   description: string
   experiences: Experience[]
   projects: Project[]
+}
+
+export type Job = {
+
 }

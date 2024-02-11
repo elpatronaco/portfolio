@@ -1,3 +1,5 @@
+"use client"
+
 import { FaChevronUp } from "react-icons/fa"
 import { classNames } from "../../../helpers/classnames"
 import { Button } from "../../button"
