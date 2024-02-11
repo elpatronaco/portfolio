@@ -1,7 +1,12 @@
 import Link from "next/link"
-import propTypes from "prop-types"
 
-export default function Project({ project }) {
+import type { Project as ProjectType } from "@/types"
+
+export type ProjectProps = {
+  project: ProjectType
+}
+
+export function Project({ project }: ProjectProps) {
   return (
     <Link className="min-w-10" href={project.href}>
       <div
@@ -19,15 +24,4 @@ export default function Project({ project }) {
       </div>
     </Link>
   )
-}
-
-Project.displayName = "Project"
-Project.propTypes = {
-  project: propTypes.shape({
-    title: propTypes.string.isRequired,
-    description: propTypes.string.isRequired,
-    href: propTypes.string.isRequired,
-    bgColor: propTypes.string.isRequired,
-    bgImage: propTypes.string.isRequired,
-  }),
 }

@@ -1,5 +1,5 @@
 import { Container, Job, Project } from "@/components"
-import { HomeProps } from "./page.types"
+import { HomeProps } from "./types"
 
 async function getData(): Promise<HomeProps> {
   const module = await import("./data/data.json", { assert: { type: "json" } })
