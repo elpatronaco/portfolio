@@ -1,5 +1,6 @@
 import { classNames } from "@/helpers/classnames"
-import { Experience } from "@/page.types"
+
+import type { Experience } from "@/types"
 
 export type JobProps = {
   experience: Experience

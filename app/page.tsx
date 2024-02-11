@@ -1,7 +1,9 @@
 import { Container, Job, Project } from "@/components"
 import { HomeProps } from "./types"
+import { Metadata } from "next"
 
 async function getData(): Promise<HomeProps> {
+  // data is not shipped to client
   const module = await import("./data/data.json", { assert: { type: "json" } })
 
   const data = module.default
@@ -13,6 +15,12 @@ async function getData(): Promise<HomeProps> {
     experiences: data.experience,
     projects: data.projects,
   }
+}
+
+export const metadata: Metadata = {
+  title: "Pau Colomé | Front developer",
+  description:
+    "I have the goal of learning and contributing no matter where I go",
 }
 
 export default async function Home() {
