@@ -1,3 +1,12 @@
+/**
+ * @type {import('next').NextConfig}
+ */ 
 module.exports = {
-    distDir: 'dist',
+  distDir: "dist",
+  compiler:{
+    styledComponents: {
+      ssr: true,
+      displayName: true,
+    },
+  }
 }
