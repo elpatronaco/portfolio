@@ -18,7 +18,7 @@ export type Project = {
   bgImage: string
 }
 
-export type HomeProps = {
+export type HomeData = {
   title: string
   position: string
   description: string
@@ -26,6 +26,12 @@ export type HomeProps = {
   projects: Project[]
 }
 
-export type Job = {
+export type Link = {
+  label: string
+  href: string
+}
 
+export type LayoutData = {
+  headerLinks: Link[]
+  footerLinks: Link[]
 }

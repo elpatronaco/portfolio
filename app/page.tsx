@@ -1,8 +1,9 @@
 import { Container, Job, Project } from "@/components"
-import { HomeProps } from "./types"
+import { HomeData } from "./types"
 import { Metadata } from "next"
+import Image from "next/image"
 
-async function getData(): Promise<HomeProps> {
+async function getData(): Promise<HomeData> {
   // data is not shipped to client
   const module = await import("../data/data.json", { assert: { type: "json" } })
 
@@ -41,8 +42,11 @@ export default async function Home() {
               {description}
             </p>
           </div>
-          <img
-            src="me.jpeg"
+          <Image
+            src="/me.jpeg"
+            alt="me"
+            width={500}
+            height={500}
             className="w-24 h-24 md:w-48 md:h-48 rounded-full aspect-square object-cover"
           />
         </div>
