@@ -43,7 +43,7 @@ export default async function Home() {
             </p>
           </div>
           <Image
-            src="https://avatars.githubusercontent.com/u/38383754?v=4"
+            src="/pfp.jpeg"
             alt="me"
             width={500}
             height={500}
