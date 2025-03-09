@@ -7,13 +7,23 @@
   },
   "experience": [
     {
+      "id": "sparta",
+      "position": "Frontend Engineer",
+      "company": "Sparta",
+      "description": "Creating value in Sparta's web apps ensuring business goals are met.",
+      "date": {
+        "from": "2024",
+        "to": "Current"
+      }
+    },
+    {
       "id": "vodafone",
       "position": "Specialist Developer",
       "company": "Vodafone",
       "description": "Web Platform squad. Specialist in migrations, upgrades, improvements of Vodafone's web apps.",
       "date": {
         "from": "2022",
-        "to": "Current"
+        "to": "2024"
       }
     },
     {
